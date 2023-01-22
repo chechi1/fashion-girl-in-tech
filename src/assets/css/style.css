@@ -27,14 +27,14 @@ body {
 }
 :root {
     --e-global-color-primary: #242424;
-    --e-global-color-secondary: #764979;
+    --e-global-color-secondary: #f6918a;
     --e-global-color-text: #6b6b6b;
     --e-global-color-accent: #413625;
-	--e-global-color-white: #ffffff;
+	--e-global-color-white: #fff;
     --e-global-color-soft-orange: #e1ccad;
-    --e-global-color-desaturated-magenta: #543458;
-    --e-global-color-very-dark-desaturated-magenta: #5c3960;
-    --e-global-color-mostly-desaturated-magenta: #8a648d;
+    --e-global-color-desaturated-magenta: #f6918a;
+    --e-global-color-very-dark-desaturated-magenta: #f6918a;
+    --e-global-color-mostly-desaturated-magenta: #f6918a;
     --e-global-color-pale-blue: #f4f7ff;
 }
 html{
@@ -45,7 +45,7 @@ h1{
     font-size: 64px;
     line-height: 82px;
     font-weight: 700;
-    color: var(--e-global-color-white);
+    color: #000
 }
 h2{
     font-family: 'Playfair Display', serif;
@@ -94,6 +94,7 @@ p{
 }
 .main_header {    
     padding: 42px 292px 0;
+    background:#000;
 }
 .navbar-collapse ul{
     text-align: center;
@@ -135,7 +136,7 @@ p{
     font-size: 18px;
     line-height: 18px;
     font-weight: 400;
-    color: var(--e-global-color-white) !important;
+    color: #fff !important;
     transition: all 0.3s ease-in-out;
 }
 .navbar-nav .nav-item a:hover{
@@ -245,7 +246,7 @@ p{
 }
 .banner-section-outer .banner-section h5{
     text-transform: uppercase;
-    color: var(--e-global-color-white);
+    color: #0000;
     letter-spacing: 3.1px;
     margin-bottom: 0;
 }
@@ -276,12 +277,18 @@ p{
         opacity: 0;
     }
 }
+
+.banner-section-content h1 {
+    color: #0000 !important;
+    border: solid 1px purple;
+}
+
 .banner-section-content h1 span{
-    color: var(--e-global-color-soft-orange);
+    color: #0000 !important;
     border-right: var(--e-global-color-soft-orange);
 }
 .banner-section-outer .banner-section p{
-    color: var(--e-global-color-white);
+    color: #0000 !important;
     margin-bottom: 28px;
     padding-right: 60px;
     margin-left: -2px;
@@ -742,6 +749,7 @@ p{
     position: relative;
     overflow: hidden;
 }
+
 .get_in_touch_section:before {
     background: var(--e-global-color-soft-orange);
     content: "";
@@ -869,12 +877,13 @@ textarea {
 /* Home Page Pricing Plans Section Style */
 
 .pricing_plans_section{
-    padding: 140px 0 130px;
+    padding: 50px 0 50px;
+    margin-bottom: 20rem;
 }
 .pricing_plans_content{
     text-align: center;
 }
-.pricing_plans_content h5{
+.pricing_plans_content h5 {
     text-transform: uppercase;
     color: var(--e-global-color-secondary);
     letter-spacing: 3.1px;
@@ -1278,10 +1287,8 @@ textarea {
 /* Home Page Footer Section Style */
 
 .footer-section{
-    position: relative;
     background-color: var(--e-global-color-secondary);
-    padding: 308px 0 0px;
-    margin-top: -218px;
+    padding: 100px 0 0px;
 }
 .middle-portion {
     margin-bottom: 92px;
@@ -1421,7 +1428,7 @@ textarea {
     font-weight: 400;
     padding: 14px 24px;
     text-align: center;
-    background-color: #724065;
+    background-color: #f6918a;
     color: var(--e-global-color-white);
     display: inline-block;
     border-radius: 25px 0 25px 0;
@@ -1457,6 +1464,10 @@ textarea {
     position: absolute;
     bottom: 98px;
     right: 0;
+}
+
+.banner-section {
+    background-color: #F8E1DF;
 }
 
 /* About Page About Us Section Style */
@@ -1813,7 +1824,7 @@ textarea {
 /* Pricing Page Pricing Plans Section Style */
 
 .pricing_plans_section_padding{
-    padding: 120px 0 130px;
+    padding: 50px 0 50px;
 }
 
 /* Team Page Style */

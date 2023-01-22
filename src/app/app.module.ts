@@ -17,6 +17,10 @@ import { HistoryComponent } from './components/transactions/transaction-history/
 import { HomeComponent } from './components/home/home.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { FormsModule } from '@angular/forms';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { ReviewsComponent } from './components/reviews/reviews.component';
+import { ProductItemComponent } from './components/marketplace/product-item/product-item.component';
+import { TruncatePipe } from './pipes/truncate.pipe';
 
 @NgModule({
   declarations: [
@@ -33,7 +37,11 @@ import { FormsModule } from '@angular/forms';
     PaymentComponent,
     HistoryComponent,
     HomeComponent,
-    BlogComponent
+    BlogComponent,
+    ContactFormComponent,
+    ReviewsComponent,
+    ProductItemComponent,
+    TruncatePipe
   ],
   imports: [
     BrowserModule,
