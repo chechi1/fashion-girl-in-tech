@@ -20,10 +20,10 @@ Project: Yogastic
 12. Footer Section
 */
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;500;600&family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Audiowide:wght@400;500;600&family=Montserrat:wght@400;700&display=swap');
 
 body {
-    font-family: 'Karla', sans-serif;
+    font-family: 'Audiowide', 'Montserrat';
 }
 :root {
     --e-global-color-primary: #242424;
@@ -41,26 +41,26 @@ html{
     scroll-behavior: smooth;
 }
 h1{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Audiowide', 'Montserrat';
     font-size: 64px;
     line-height: 82px;
     font-weight: 700;
     color: #000
 }
 h2{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Audiowide', 'Montserrat';
     font-size: 48px;
     line-height: 55px;
     font-weight: 700;
 }
 h3{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Audiowide', 'Montserrat';
     font-size: 22px;
     line-height: 55px;
     font-weight: 700;
 }
 h4{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Audiowide', 'Montserrat';
     font-size: 22px;
     line-height: 30px;
     font-weight: 700;
@@ -71,7 +71,7 @@ h5{
     font-weight: 400;
 }
 h6{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Audiowide', 'Montserrat';
     font-size: 20px;
     line-height: 28px;
     font-weight: 700;
@@ -79,7 +79,6 @@ h6{
 p{
     font-size: 20px;
     line-height: 28px;
-    font-weight: 400;
 }
 
 /* Home Page Style */
@@ -303,16 +302,16 @@ p{
     font-weight: 500;
     padding: 24px 50px;
     text-align: center;
-    color: var(--e-global-color-accent);
+    color: var(--e-global-color-white);
     display: inline-block;
-    background-color: var(--e-global-color-soft-orange);
+    background-color: #000;
     border-radius: 35px 0px 35px 0px;
     transition: all 0.3s ease-in-out;
     overflow: hidden;
 }
 .banner-section-outer .btn_wrapper .getstarted_btn:hover {
     color: var(--e-global-color-secondary);
-    background-color: var(--e-global-color-white);
+    background-color: #000;
     transform: translateY(-10px);
 }
 .banner-section-outer .btn_wrapper .getstarted_btn:hover:before {
@@ -458,7 +457,7 @@ p{
 }
 .services_box_content .services_box_lower_portion .btn_wrapper i{
     color: var(--e-global-color-accent);
-    background-color: var(--e-global-color-soft-orange);
+    background-color: #000;
     font-size: 26px;
     line-height: 26px;
     padding: 12px 15px;
@@ -473,7 +472,7 @@ p{
 }
 .services_box_content:hover .services_box_lower_portion .btn_wrapper i{
     color: var(--e-global-color-white);
-    background-color: var(--e-global-color-secondary);
+    background-color: #000;
 }
 .services_section .services_left_shape{
     position: absolute;
@@ -484,10 +483,7 @@ p{
 /* Home Page About Us Section Style */
 
 .aboutus_section{
-    background-image: url('../images/aboutus_background.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: #E8FDEB;
     padding: 100px 0 130px;
 }
 .aboutus_image{
@@ -547,14 +543,14 @@ p{
     text-align: center;
     color: var(--e-global-color-accent);
     display: inline-block;
-    background-color: var(--e-global-color-soft-orange);
+    background-color: #000;
     border-radius: 35px 0px 35px 0px;
     transition: all 0.3s ease-in-out;
     overflow: hidden;
 }
 .aboutus_content .btn_wrapper .get_started_btn:hover {
     color: var(--e-global-color-white);
-    background-color: var(--e-global-color-secondary);
+    background-color: #000;
     transform: translateY(-10px);
 }
 .aboutus_content .btn_wrapper .get_started_btn:hover:before {
@@ -572,7 +568,7 @@ p{
 	z-index: -1;
 	content: '';
 	color: var(--e-global-color-white);
-	background: var(--e-global-color-secondary);
+	background: #000;
 	transition: all 0.4s cubic-bezier(0.12, 0, 0.38, 1) 0s;
 }
 
@@ -751,16 +747,12 @@ p{
 }
 
 .get_in_touch_section:before {
-    background: var(--e-global-color-soft-orange);
     content: "";
     width: 50%;
-    height: 806px;
     top: 0;
     left: 0;
-    position: absolute;
 }
 .get_in_touch_section::after {
-    background: url(../images/get_in_touch_image.jpg);
     content: "";
     width: 50%;
     height: 806px;
@@ -934,7 +926,10 @@ textarea {
     background-color: var(--e-global-color-soft-orange);
 }
 .pricing_plans_box_lower_portion {
-    padding: 70px 60px 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 1rem;
+    height: 24rem;
 }
 .second_lower_portion{
     padding: 70px 69px 30px;
@@ -991,9 +986,9 @@ textarea {
     font-weight: 500;
     padding: 20px 35px;
     text-align: center;
-    color: var(--e-global-color-accent);
+    color: #fff;
     display: inline-block;
-    background-color: var(--e-global-color-soft-orange);
+    background-color: #000;
     border-radius: 32px 0px 32px 0px;
     transition: all 0.3s ease-in-out;
 }
@@ -1661,7 +1656,7 @@ textarea {
 }
 .mission_content .btn_wrapper .read_more_btn:hover {
     color: var(--e-global-color-accent);
-    background-color: var(--e-global-color-soft-orange);
+    background-color: #000;
     transform: translateY(-10px);
 }
 .mission_content .btn_wrapper .read_more_btn:hover:before {
@@ -1679,7 +1674,7 @@ textarea {
 	z-index: -1;
 	content: '';
     color: var(--e-global-color-accent);
-    background-color: var(--e-global-color-soft-orange);
+    background-color: #000;
 	transition: all 0.4s cubic-bezier(0.12, 0, 0.38, 1) 0s;
 }
 .mission_section .mission_right_shape {
@@ -1727,7 +1722,7 @@ textarea {
     text-align: center;
     color: var(--e-global-color-white);
     display: inline-block;
-    background-color: var(--e-global-color-secondary);
+    background-color: #000;
     border-radius: 35px 0px 35px 0px;
     transition: all 0.3s ease-in-out;
     position: relative;
@@ -1735,7 +1730,7 @@ textarea {
 }
 .vision_content .btn_wrapper .read_more_btn:hover {
     color: var(--e-global-color-accent);
-    background-color: var(--e-global-color-soft-orange);
+    background-color: #000;
     transform: translateY(-10px);
 }
 .vision_content .btn_wrapper .read_more_btn:hover:before {

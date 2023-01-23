@@ -1,12 +1,13 @@
 <!-- GET IN TOUCH SECTION -->
-<section class="get_in_touch_section" style="margin-top: 10rem;">
+<section class="get_in_touch_section">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <div class="get_in_touch_content">
             <h5>Get in touch</h5>
-            <h2>Get a Free Consultation Now</h2>
-            <form>
+            <h2>Join the FGIT community</h2>
+            <span style="color: #9AFEB0" *ngIf="email_sent">Process is complete</span>
+            <form #myForm="ngForm" (ngSubmit)="submitForm(myForm)">
               <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6">
                   <div class="form-group mb-0">
@@ -16,6 +17,7 @@
                       id="fname"
                       class="form-control"
                       placeholder="First Name"
+                      [(ngModel)]="fname"
                     />
                   </div>
                 </div>
@@ -27,6 +29,7 @@
                       id="lname"
                       class="form-control form_style"
                       placeholder="Last Name"
+                      [(ngModel)]="lname"
                     />
                   </div>
                 </div>
@@ -38,6 +41,7 @@
                       id="phonenum"
                       class="form-control"
                       placeholder="Phone"
+                      [(ngModel)]="phonenum"
                     />
                   </div>
                 </div>
@@ -49,6 +53,7 @@
                       id="emailaddrs"
                       class="form-control form_style"
                       placeholder="Email"
+                      [(ngModel)]="emailaddrs"
                     />
                   </div>
                 </div>
@@ -62,34 +67,17 @@
                       id="msg"
                       class="form-control"
                       placeholder="Message"
+                      [(ngModel)]="comment"
                     ></textarea>
                   </div>
                 </div>
               </div>
               <div class="btn_wrapper">
-                <button type="submit" name="get_started" id="started">
+                <button type="submit" name="get_started" id="started" style="background-color: black;">
                   Get Started
                 </button>
               </div>
             </form>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-2 col-xs-12 d-md-block d-none"></div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-          <div class="get_in_touch_video position-relative">
-            <a
-              class="popup-vimeo"
-              href="https://previews.customer.envatousercontent.com/6720474d-ddc3-4b86-acf1-8d093cb37b6d/watermarked_preview/watermarked_preview.mp4"
-            >
-              <figure class="video_img mb-0">
-                <img
-                  class="thumb img-fluid"
-                  style="cursor: pointer"
-                  src="./assets/images/get_in_touch_video_icon.png"
-                  alt=""
-                />
-              </figure>
-            </a>
           </div>
         </div>
       </div>
